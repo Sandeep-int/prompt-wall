@@ -1,0 +1,24 @@
+patterns:
+  - name: "direct_override"
+    regex: "ignore previous|disregard instruction|forget context|forget everything"
+    severity: "CRITICAL"
+  
+  - name: "prompt_leak"
+    regex: "show prompt|display system message|repeat instruction"
+    severity: "HIGH"
+  
+  - name: "jailbreak_dan"
+    regex: "DAN|Do Anything Now|pretend you are|imagine you are"
+    severity: "HIGH"
+  
+  - name: "encoding_hex"
+    regex: "\\\\x[0-9a-fA-F]{2}"
+    severity: "MEDIUM"
+  
+  - name: "base64_payload"
+    regex: "^[A-Za-z0-9+/]{40,}={0,2}$"
+    severity: "MEDIUM"
+
+  - name: "sql_injection"
+    regex: "union select|drop table|insert into|delete from"
+    severity: "HIGH"
