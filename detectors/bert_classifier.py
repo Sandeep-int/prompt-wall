@@ -2,7 +2,7 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import torch
 import time
 
-MODEL_PATH = "/mnt/d/projects/prompt-wall/models/bert_injection"
+MODEL_PATH = "/app/models/bert_injection"
 
 class BertClassifier:
     def __init__(self):
