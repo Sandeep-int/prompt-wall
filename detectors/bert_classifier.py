@@ -1,8 +1,9 @@
 from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 import torch
 import time
+import os
 
-MODEL_PATH = "/app/models/bert_injection"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), '..', 'models', 'bert_injection')
 
 class BertClassifier:
     def __init__(self):

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "validators": {
+    "guardrails/detect_pii": {
+      "import_path": "guardrails_grhub_detect_pii",
+      "exports": [
+        "DetectPII"
+      ],
+      "installed_at": "2026-05-11T07:38:28.964696+00:00",
+      "package_name": "guardrails-grhub-detect-pii"
+    },
+    "guardrails/toxic_language": {
+      "import_path": "guardrails_grhub_toxic_language",
+      "exports": [
+        "ToxicLanguage"
+      ],
+      "installed_at": "2026-05-11T08:01:49.706065+00:00",
+      "package_name": "guardrails-grhub-toxic-language"
+    }
+  }
+}
